@@ -6,8 +6,8 @@ pipeline {
             steps {
                 echo 'Clean'
                 bat '''d:
-                cd D:\\prac_postman\\tmp
-                rmdir temp1'''
+                cd D:\\prac_playwright\\TestGH
+                npm test testone'''
             }   
         }
          stage('clone') {

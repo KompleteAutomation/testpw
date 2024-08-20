@@ -2,12 +2,14 @@ pipeline {
     agent any
 
     stages {
-         stage('Checkout external proj') {
-			steps {
-            git branch: 'main',
-            sh "ls -lat"
+        stage('Clean') {
+            steps {
+                echo 'Clean'
+                bat '''d:
+                cd D:\\prac_postman\\tmp
+                rmdir temp1'''
+            }   
         }
-    }
          stage('clone') {
              steps {
                 echo 'Clean'

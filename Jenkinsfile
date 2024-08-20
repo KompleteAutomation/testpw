@@ -10,12 +10,6 @@ pipeline {
                 npm run testone'''
             }   
         }
-         stage('clone') {
-             steps {
-                echo 'Clean'
-               
-            } 
-             
-         }
+         
     }
 }
